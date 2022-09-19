@@ -11,3 +11,18 @@
 .logo-part {
     color: var(--article-color);
 }
+
+.logo-footer {
+    color: var(--accent-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.logo-part-footer {
+    color: var(--some-text-color);
+}

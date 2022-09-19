@@ -1,0 +1,116 @@
+.portfolio-container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filter-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    background-color: var(--team-bkg-color);
+    color: var(--article-color);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    padding: 6px 22px;
+
+    transition: color var(--transition), background-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--some-text-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.project {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--article-color);
+    margin-bottom: 4px;
+}
+
+.project-type {
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--main-text-color);
+}
+
+.our-projects {
+    margin-right: -30px;
+    margin-bottom: -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+}
+
+.card-content {
+    padding: 20px 24px;
+    border-right: 1px solid var(--card-border);
+    border-bottom: 1px solid var(--card-border);
+    border-left: 1px solid var(--card-border);
+}
+
+.card-link {
+    transition: box-shadow var(--transition);
+}
+
+.card-link:hover,
+.card-link:focus {
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.overlay-construction {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.overlay {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    background-color: var(--overlay-bkg-color);
+    color: var(--some-text-color);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    transform: translateY(100%);
+    transition: transform var(--transition);
+}
+
+.card-link:hover .overlay,
+.card-link:focus .overlay {
+    transform: translateY(0%);
+}

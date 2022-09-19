@@ -1,4 +1,4 @@
-:root {
+/*:root {
   --main-bkg-color: #ffffff;
   --main-text-color: #757575;
   --article-color: #212121;
@@ -29,7 +29,7 @@
 
 /* body */
 
-body {
+/* body {
   font-size: 14px;
   background-color: var(--main-bkg-color);
   color: var(--article-color);
@@ -85,6 +85,7 @@ img {
   margin: -1px;
 }
 /* header */
+/*
 .header-box {
   display: flex;
   justify-content: space-between;
@@ -179,6 +180,7 @@ img {
 
 /* hero */
 
+/* 
 .hero-part {
   background-color: var(--hero-footer-bkg-color);
   background-image: linear-gradient(
@@ -239,6 +241,7 @@ img {
 
 /* our feachers */
 
+/* 
 .feature {
   font-size: 14px;
   font-family: var(--main-font);
@@ -280,7 +283,7 @@ img {
 }
 
 /* what are we doing*/
-
+/*
 .titles {
   font-weight: 700;
   font-size: 36px;
@@ -324,7 +327,7 @@ img {
 }
 
 /* team part */
-
+/*
 .team {
   background-color: var(--team-bkg-color);
 }
@@ -360,7 +363,7 @@ img {
 }
 
 /* clients */
-
+/*
 .client {
   width: 170px;
   height: 92px;
@@ -410,6 +413,7 @@ footer {
 .footer-info {
   align-items: baseline;
 }
+/*
 .logo-footer {
   color: var(--accent-color);
   font-family: var(--secondary-font);
@@ -420,9 +424,11 @@ footer {
   display: inline-block;
   margin-bottom: 20px;
 }
+
 .logo-part-footer {
   color: var(--some-text-color);
 }
+*/
 .contact-footer {
   line-height: 1.7;
   color: var(--contacts-color);
@@ -450,6 +456,7 @@ address {
 
   margin-bottom: 20px;
 }
+/*
 .networks {
   display: flex;
   justify-content: center;
@@ -484,7 +491,7 @@ address {
 }
 
 /* subscribe-form */
-
+/*
 .footer-form {
   margin-left: auto;
 }
@@ -540,7 +547,7 @@ address {
 }
 
 /* portfolio page */
-
+/*
 .portfolio-container {
   width: 1200px;
   padding-left: 15px;
@@ -650,6 +657,7 @@ address {
 
 /* backdrop */
 
+/*
 .backdrop {
   position: fixed;
   top: 0;

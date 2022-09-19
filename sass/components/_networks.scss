@@ -1,0 +1,37 @@
+.networks {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.network {
+    width: 44px;
+    height: 44px;
+}
+
+.network-item {
+    width: 20px;
+    height: 20px;
+}
+
+.network-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--fill-icon-color);
+    background-color: var(--network-item-bkg);
+    border-radius: 50%;
+    transition: background-color var(--transition), fill var(--transition);
+}
+
+.network-footer {
+    fill: var(--some-text-color);
+}
+
+.network-link:hover,
+.network-link:focus {
+    background-color: var(--accent-color);
+    fill: var(--some-text-color);
+}
