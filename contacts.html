@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="page-head">
+      <div class="header-box container">
+        <nav class="header-nav">
+          <a class="logo-header" href="./index.html" lang="en"
+            >Web<span class="logo-part">Studio</span></a
+          >
+          <ul class="site-nav">
+            <li class="nav-item">
+              <a href="./index.html" class="link">Студія</a>
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contacts.html" class="link current">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts">
+          <li class="contact-content">
+            <a class="contact" href="mailto:info@devstudio.com">
+              <svg
+                aria-label="конверт"
+                class="letter-img"
+                width="16px"
+                height="12px"
+              >
+                <use href="./images/sprite.svg#icon-letter"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contact-content">
+            <a class="contact" href="tel:+380961111111"
+              ><svg
+                aria-label="телефон"
+                class="phone-img"
+                width="10px"
+                height="16px"
+              >
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main></main>
+
+    <footer class="foot-page">
+      <div class="footer-parts container">
+        <div class="footer-info first-footer-info">
+          <a class="logo-footer" href="./index.html" lang="en"
+            >Web<span class="logo-part-footer">Studio</span></a
+          >
+          <address>
+            <ul class="foot-navigation">
+              <li class="contact-f">
+                <a
+                  class="foot-navigation-map"
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                >
+                  м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="contact-f">
+                <a class="contact-footer mail" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a class="contact-footer" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join-part footer-info">
+          <p class="join-us">Приєднуйтесь</p>
+          <ul class="networks">
+            <li class="network">
+              <a href="" class="network-link network-footer">
+                <svg class="network-item insta">
+                  <use
+                    href="./images/sprite.svg#icon-instagram"
+                    aria-label="інстаграм"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="network">
+              <a href="" class="network-link network-footer">
+                <svg class="network-item twitter">
+                  <use
+                    href="./images/sprite.svg#icon-twitter"
+                    aria-label="твіттер"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="network">
+              <a href="" class="network-link network-footer">
+                <svg class="network-item facebook">
+                  <use
+                    href="./images/sprite.svg#icon-facebook"
+                    aria-label="фейсбук"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="network">
+              <a href="" class="network-link network-footer">
+                <svg class="network-item linkedin">
+                  <use
+                    href="./images/sprite.svg#icon-linkedin"
+                    aria-label="лінкедін"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-form">
+          <form class="subscribe-form">
+            <p class="join-us">Підпишіться на розсилку</p>
+            <input
+              type="email"
+              class="email-input"
+              placeholder="E-mail"
+              required
+              name="user-email"
+            />
+            <button type="button" class="subscribe-btn">
+              Підписатися
+              <svg class="subscribe-btn-image" width="24px" height="24px">
+                <use href="./images/symbol-defs-sprite.svg#icon-iconsend"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
