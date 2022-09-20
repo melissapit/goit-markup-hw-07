@@ -17,31 +17,35 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="page-head">
-      <div class="header-box container">
-        <nav class="header-nav">
-          <a class="logo-header" href="./index.html" lang="en"
-            >Web<span class="logo-part">Studio</span></a
+    <header class="page-header">
+      <div class="page-header__box container">
+        <nav class="page-header__nav">
+          <a class="logo logo__page-header" href="./index.html" lang="en"
+            >Web<span class="logo__page-header_part">Studio</span></a
           >
-          <ul class="site-nav">
-            <li class="nav-item">
-              <a href="./index.html" class="link">Студія</a>
+          <ul class="page-header__site-nav">
+            <li>
+              <a href="./index.html" class="site-nav__link">Студія</a>
             </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            <li>
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link_current"
+                >Портфоліо</a
+              >
             </li>
-            <li class="nav-item">
-              <a href="./contacts.html" class="link">Контакти</a>
+            <li>
+              <a href="./contacts.html" class="site-nav__link">Контакти</a>
             </li>
           </ul>
         </nav>
 
         <ul class="contacts">
-          <li class="contact-content">
-            <a class="contact" href="mailto:info@devstudio.com">
+          <li>
+            <a class="contacts__item" href="mailto:info@devstudio.com">
               <svg
                 aria-label="конверт"
-                class="letter-img"
+                class="contacts__item_img"
                 width="16px"
                 height="12px"
               >
@@ -50,11 +54,11 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="contact-content">
-            <a class="contact" href="tel:+380961111111"
+          <li>
+            <a class="contacts__item" href="tel:+380961111111"
               ><svg
                 aria-label="телефон"
-                class="phone-img"
+                class="contacts__item_img"
                 width="10px"
                 height="16px"
               >
@@ -68,17 +72,17 @@
     </header>
 
     <main>
-      <section class="portfolio-content section">
+      <section class="portfolio section">
         <div class="container">
           <h1 class="visually-hidden">Наші роботи</h1>
-          <ul class="buttons">
+          <ul class="portfolio__buttons">
             <li><button type="button" class="filter-btn">Усі</button></li>
             <li><button type="button" class="filter-btn">Веб-сайти</button></li>
             <li><button type="button" class="filter-btn">Додатки</button></li>
             <li><button type="button" class="filter-btn">Дизайн</button></li>
             <li><button type="button" class="filter-btn">Маркетинг</button></li>
           </ul>
-          <ul class="our-projects">
+          <ul class="portfolio__our-projects">
             <li class="card">
               <a href="" class="card-link">
                 <div class="overlay-construction">
@@ -273,41 +277,43 @@
       </section>
     </main>
 
-    <footer class="foot-page">
-      <div class="footer-parts container">
-        <div class="footer-info first-footer-info">
-          <a class="logo-footer" href="./index.html" lang="en"
-            >Web<span class="logo-part-footer">Studio</span></a
+    <footer class="footer-part">
+      <div class="footer-part__container container">
+        <div class="footer-part__info">
+          <a class="logo logo__footer" href="./index.html" lang="en"
+            >Web<span class="logo__footer_part">Studio</span></a
           >
           <address>
-            <ul class="foot-navigation">
-              <li class="contact-f">
+            <ul class="footer-part__navigation">
+              <li class="footer-part__contact">
                 <a
-                  class="foot-navigation-map"
+                  class="footer-part__navigation_map"
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                 >
                   м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
-              <li class="contact-f">
-                <a class="contact-footer mail" href="mailto:info@example.com"
+              <li class="footer-part__contact">
+                <a
+                  class="footer-part__contact-item"
+                  href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li>
-                <a class="contact-footer" href="tel:+380991111111"
+                <a class="footer-part__contact-item" href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="join-part footer-info">
-          <p class="join-us">Приєднуйтесь</p>
-          <ul class="networks">
-            <li class="network">
-              <a href="" class="network-link network-footer">
-                <svg class="network-item">
+        <div class="footer-part__info">
+          <p class="footer-part__join-us">Приєднуйтесь</p>
+          <ul class="network">
+            <li class="network__list">
+              <a href="" class="network__link">
+                <svg class="network__item insta">
                   <use
                     href="./images/sprite.svg#icon-instagram"
                     aria-label="інстаграм"
@@ -315,9 +321,9 @@
                 </svg>
               </a>
             </li>
-            <li class="network">
-              <a href="" class="network-link network-footer">
-                <svg class="network-item twitter">
+            <li class="network__list">
+              <a href="" class="network__link">
+                <svg class="network__item twitter">
                   <use
                     href="./images/sprite.svg#icon-twitter"
                     aria-label="твіттер"
@@ -325,9 +331,9 @@
                 </svg>
               </a>
             </li>
-            <li class="network">
-              <a href="" class="network-link network-footer">
-                <svg class="network-item facebook">
+            <li class="network__list">
+              <a href="" class="network__link">
+                <svg class="network__item facebook">
                   <use
                     href="./images/sprite.svg#icon-facebook"
                     aria-label="фейсбук"
@@ -335,9 +341,9 @@
                 </svg>
               </a>
             </li>
-            <li class="network">
-              <a href="" class="network-link network-footer">
-                <svg class="network-item linkedin">
+            <li class="network__list">
+              <a href="" class="network__link">
+                <svg class="network__item linkedin">
                   <use
                     href="./images/sprite.svg#icon-linkedin"
                     aria-label="лінкедін"
@@ -347,21 +353,25 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form">
-          <p class="join-us">Підпишіться на розсилку</p>
-          <form class="subscribe-form">
-            <label class="footer-form-input">
+        <div class="footer-part__form-container">
+          <p class="footer-part__form-descr">Підпишіться на розсилку</p>
+          <form class="footer-part__subscribe-form">
+            <label class="footer-part__subscribe-label">
               <input
                 type="email"
-                class="email-input"
+                class="footer-part__email-input"
                 placeholder="E-mail"
                 required
                 name="user-email"
               />
             </label>
-            <button type="submit" class="subscribe-btn">
+            <button type="submit" class="footer-part__subscribe-btn">
               Підписатися
-              <svg class="subscribe-btn-image" width="24px" height="24px">
+              <svg
+                class="footer-part__subscribe-btn-img"
+                width="24px"
+                height="24px"
+              >
                 <use href="./images/symbol-defs-sprite.svg#icon-iconsend"></use>
               </svg>
             </button>

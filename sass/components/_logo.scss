@@ -1,28 +1,25 @@
-.logo-header {
+.logo {
     color: var(--accent-color);
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+}
 
+.logo__page-header {
+ 
     margin-right: 94px;
 }
 
-.logo-part {
+.logo__page-header_part {
     color: var(--article-color);
 }
 
-.logo-footer {
-    color: var(--accent-color);
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-
+.logo__footer {
     display: inline-block;
     margin-bottom: 20px;
 }
 
-.logo-part-footer {
+.logo__footer_part {
     color: var(--some-text-color);
 }

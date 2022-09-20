@@ -1,23 +1,23 @@
-.header-box {
+.page-header__box {
     display: flex;
     justify-content: space-between;
 }
 
-.page-head {
+.page-header {
     border-bottom: 1px solid var(--border-header);
 }
 
-.header-nav {
+.page-header__nav {
     display: flex;
     align-items: center;
 }
 
-.site-nav {
+.page-header__site-nav {
     display: flex;
     gap: 50px;
 }
 
-.link.current::after {
+.site-nav__link.site-nav__link_current::after {
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -29,7 +29,7 @@
     border-radius: 2px;
 }
 
-.link {
+.site-nav__link {
     position: relative;
     color: var(--article-color);
     font-weight: 500;
@@ -41,48 +41,46 @@
     padding-bottom: 30px;
 }
 
-.link,
+.site-nav__link,
 .contact,
 .contact,
-.site-nav,
-.link.current {
+.page-header__site-nav,
+.site-nav__link.site-nav__link_current {
     transition: color var(--transition);
 }
 
-.link:hover,
-.link:focus,
-.contact:hover,
-.contact:focus,
+.site-nav__link:hover,
+.site-nav__link:focus,
+.contacts__item:hover,
+.contacts__item:focus,
 .contact-footer:hover,
 .contact-footer:focus,
-.site-nav .link.current {
+.page-header__site-nav .site-nav__link.current {
     color: var(--accent-color);
 }
-
-.contact {
-    color: var(--main-text-color);
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-
-    padding-top: 32px;
-    padding-bottom: 32px;
-    align-items: center;
-    display: flex;
-
-    fill: currentColor;
-}
-
 .contacts {
+    position: relative;
     display: flex;
     gap: 50px;
     align-items: center;
 }
-
-.letter-img {
-    margin-right: 10px;
+.contacts__item {
+    color: var(--main-text-color);
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+    
+        padding-top: 32px;
+        padding-bottom: 32px;
+        align-items: center;
+        display: flex;
+    
+        fill: currentColor;
+        
 }
 
-.phone-img {
+
+.contacts__item_img {
+
     margin-right: 10px;
 }

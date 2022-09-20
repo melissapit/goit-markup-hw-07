@@ -1,4 +1,4 @@
-.subscribe-btn {
+.footer-part__subscribe-btn {
     position: relative;
     font-weight: 700;
     font-size: 16px;
@@ -18,12 +18,12 @@
     transition: background-color var(--transition);
 }
 
-.subscribe-btn:hover,
-.subscribe-btn:focus {
+.footer-part__subscribe-btn:hover,
+.footer-part__subscribe-btn:focus {
     background-color: var(--modal-open-btn-hover);
 }
 
-.subscribe-btn-image {
+.footer-part__subscribe-btn-img {
     position: absolute;
     width: 24px;
     height: 24px;

@@ -2,31 +2,29 @@ footer {
     background-color: var(--hero-footer-bkg-color);
 }
 
-.foot-page {
+.footer-part {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.footer-parts {
+.footer-part__container {
     display: flex;
     align-items: baseline;
     padding: 0;
 }
 
-.first-footer-info {
+.footer-part__info {
     margin-right: 70px;
 }
 
-.footer-info {
-    align-items: baseline;
-}
 
-.contact-footer {
+
+.footer-part__contact-item {
     line-height: 1.7;
     color: var(--contacts-color);
 }
 
-.contact-f {
+.footer-part__contact {
     margin-bottom: 9px;
 }
 
@@ -34,7 +32,7 @@ footer {
     display: inline-block;
 }
 
-.foot-navigation-map {
+.footer-part__navigation_map {
     line-height: 1.7;
     color: var(--some-text-color);
 }
@@ -43,7 +41,8 @@ address {
     font-style: normal;
 }
 
-.join-us {
+.footer-part__form-descr,
+.footer-part__join-us {
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 14px;
@@ -53,13 +52,17 @@ address {
 
     margin-bottom: 20px;
 }
-.subscribe-form {
+
+ .footer-part__form-container {
+       margin-left: auto;
+    }
+.footer-part__subscribe-form {
     display: flex;
     align-items: center;
     padding: 0;
 }
 
-.email-input {
+.footer-part__email-input {
     display: block;
     background-color: transparent;
     width: 358px;
@@ -69,10 +72,10 @@ address {
     padding-left: 16px;
 }
 
-.footer-form-input {
+.footer-part__subscribe-label {
     margin-right: 12px;
 }
 
-.email-input::placeholder {
+.footer-part__email-input::placeholder {
     color: var(--contacts-color);
 }

@@ -1,20 +1,16 @@
 .examples {
     padding-top: 0;
 }
-.container-examples {
+.examples__container {
     display: flex;
     gap: 30px;
 }
-.example-img {
+.examples__img {
     position: relative;
     width: 370px;
 }
 
-.examples-title {
-    margin-bottom: 50px;
-}
-
-.example-text-container {
+.examples__text-container {
     position: absolute;
     display: flex;
     align-items: center;
@@ -26,7 +22,7 @@
     background-color: var(--bkg-examples);
 }
 
-.example-text {
+.examples__text {
     font-weight: 700;
     line-height: 1.14;
     text-align: center;
