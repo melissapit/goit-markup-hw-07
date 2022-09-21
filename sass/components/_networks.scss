@@ -25,15 +25,15 @@
     background-color: var(--network-item-bkg);
     border-radius: 50%;
     transition: background-color var(--transition), fill var(--transition);
-}
-
-.network__footer {
-    fill: var(--some-text-color);
 
     &:hover,
         &:focus {
             background-color: var(--accent-color);
             fill: var(--some-text-color);
         }
+}
+
+.network__footer {
+    fill: var(--some-text-color);
 }
 

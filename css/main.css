@@ -150,12 +150,12 @@ img {
   border-radius: 50%;
   transition: background-color var(--transition), fill var(--transition);
 }
-
-.network__footer {
+.network__link:hover, .network__link:focus {
+  background-color: var(--accent-color);
   fill: var(--some-text-color);
 }
-.network__footer:hover, .network__footer:focus {
-  background-color: var(--accent-color);
+
+.network__footer {
   fill: var(--some-text-color);
 }
 
