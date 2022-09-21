@@ -18,9 +18,10 @@
     margin-left: auto;
     margin-right: auto;
     transition: background-color var(--transition);
+
+   &:hover,
+        &:focus {
+            background-color: var(--modal-open-btn-hover);
+        }
 }
 
-.hero__modal-open-btn:hover,
-.hero__modal-open-btn:focus {
-    background-color: var(--modal-open-btn-hover);
-}

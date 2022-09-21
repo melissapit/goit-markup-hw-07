@@ -1,5 +1,5 @@
 
-.filter-btn {
+.portfolio__filter-btn {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -15,16 +15,18 @@
 
     transition: color var(--transition), background-color var(--transition),
         box-shadow var(--transition);
+
+        &:hover,
+        &:focus {
+                background-color: var(--accent-color);
+                color: var(--some-text-color);
+        
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                    0px 2px 2px rgba(0, 0, 0, 0.12);
+            }
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
-    background-color: var(--accent-color);
-    color: var(--some-text-color);
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
 .portfolio__buttons {
     display: flex;
@@ -33,7 +35,7 @@
     margin-bottom: 50px;
 }
 
-.project {
+.portfolio__project {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -41,7 +43,7 @@
     margin-bottom: 4px;
 }
 
-.project-type {
+.portfolio__project-type {
     font-weight: 400;
     line-height: 1.7;
     color: var(--main-text-color);
@@ -54,37 +56,39 @@
     flex-wrap: wrap;
 }
 
-.card {
+.portfolio__card {
     margin-right: 30px;
     margin-bottom: 30px;
     flex-basis: calc(100% / 3 - 30px);
 }
 
-.card-content {
+.portfolio__card-content {
     padding: 20px 24px;
     border-right: 1px solid var(--card-border);
     border-bottom: 1px solid var(--card-border);
     border-left: 1px solid var(--card-border);
 }
 
-.card-link {
+.portfolio__card-link {
     transition: box-shadow var(--transition);
+
+    &:hover,
+    &:focus {
+            display: block;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
 }
 
-.card-link:hover,
-.card-link:focus {
-    display: block;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
-.overlay-construction {
+
+.portfolio__overlay-construction {
     position: relative;
 
     overflow: hidden;
 }
 
-.overlay {
+.portfolio__overlay {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.55;
@@ -101,9 +105,10 @@
 
     transform: translateY(100%);
     transition: transform var(--transition);
+
+    .portfolio__card-link:hover &,
+        .portfolio__card-link:focus & {
+            transform: translateY(0%);
+        }
 }
 
-.card-link:hover .overlay,
-.card-link:focus .overlay {
-    transform: translateY(0%);
-}

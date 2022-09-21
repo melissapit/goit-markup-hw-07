@@ -29,10 +29,11 @@
 
 .network__footer {
     fill: var(--some-text-color);
+
+    &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+            fill: var(--some-text-color);
+        }
 }
 
-.network__link:hover,
-.network__link:focus {
-    background-color: var(--accent-color);
-    fill: var(--some-text-color);
-}

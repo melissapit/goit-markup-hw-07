@@ -19,13 +19,15 @@
     fill: var(--fill-icon-color);
 
     transition: border var(--transition), fill var(--transition);
+
+    &:hover,
+     &:focus {
+            border: 1px solid var(--accent-color);
+            fill: var(--accent-color);
+        }
 }
 
-.clients__link:hover,
-.clients__link:focus {
-    border: 1px solid var(--accent-color);
-    fill: var(--accent-color);
-}
+
 
 .clients__icon {
     width: 106px;

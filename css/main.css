@@ -154,20 +154,18 @@ img {
 .network__footer {
   fill: var(--some-text-color);
 }
-
-.network__link:hover,
-.network__link:focus {
+.network__footer:hover, .network__footer:focus {
   background-color: var(--accent-color);
   fill: var(--some-text-color);
+}
+
+.page-header {
+  border-bottom: 1px solid var(--border-header);
 }
 
 .page-header__box {
   display: flex;
   justify-content: space-between;
-}
-
-.page-header {
-  border-bottom: 1px solid var(--border-header);
 }
 
 .page-header__nav {
@@ -180,6 +178,16 @@ img {
   gap: 50px;
 }
 
+.site-nav__link {
+  position: relative;
+  color: var(--article-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .site-nav__link.site-nav__link_current::after {
   position: absolute;
   left: 0;
@@ -192,20 +200,9 @@ img {
   border-radius: 2px;
 }
 
-.site-nav__link {
-  position: relative;
-  color: var(--article-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  display: inline-block;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .site-nav__link,
-.contact,
-.contact,
+.contacts,
+.contacts,
 .page-header__site-nav,
 .site-nav__link.site-nav__link_current {
   transition: color var(--transition);
@@ -215,8 +212,8 @@ img {
 .site-nav__link:focus,
 .contacts__item:hover,
 .contacts__item:focus,
-.contact-footer:hover,
-.contact-footer:focus,
+.footer-part__contact-item:hover,
+.footer-part__contact-item:focus,
 .page-header__site-nav .site-nav__link.current {
   color: var(--accent-color);
 }
@@ -253,7 +250,6 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
 .hero__text {
   font-weight: 900;
   font-size: 44px;
@@ -288,9 +284,7 @@ img {
   margin-right: auto;
   transition: background-color var(--transition);
 }
-
-.hero__modal-open-btn:hover,
-.hero__modal-open-btn:focus {
+.hero__modal-open-btn:hover, .hero__modal-open-btn:focus {
   background-color: var(--modal-open-btn-hover);
 }
 
@@ -303,11 +297,6 @@ img {
 
 .our-features__item {
   width: 270px;
-}
-
-.feature-images {
-  display: flex;
-  gap: 30px;
 }
 
 .our-features__img {
@@ -338,7 +327,6 @@ img {
 .team {
   background-color: var(--team-bkg-color);
 }
-
 .team__faces {
   font-weight: 500;
   font-size: 16px;
@@ -347,7 +335,6 @@ img {
   color: var(--article-color);
   margin-bottom: 10px;
 }
-
 .team__job {
   font-size: 16px;
   line-height: 1.2;
@@ -355,18 +342,15 @@ img {
   color: var(--main-text-color);
   margin-bottom: 16px;
 }
-
 .team__container {
   display: flex;
   gap: 30px;
 }
-
 .team__person-card {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   flex-basis: calc((100% - 90px) / 4);
   background-color: var(--some-bkg-color);
 }
-
 .team__person {
   padding: 30px;
 }
@@ -426,9 +410,7 @@ img {
   fill: var(--fill-icon-color);
   transition: border var(--transition), fill var(--transition);
 }
-
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
@@ -509,13 +491,12 @@ address {
   border-radius: 4px;
   padding-left: 16px;
 }
+.footer-part__email-input::placeholder {
+  color: var(--contacts-color);
+}
 
 .footer-part__subscribe-label {
   margin-right: 12px;
-}
-
-.footer-part__email-input::placeholder {
-  color: var(--contacts-color);
 }
 
 .footer-part__subscribe-btn {
@@ -537,9 +518,7 @@ address {
   margin: 0px;
   transition: background-color var(--transition);
 }
-
-.footer-part__subscribe-btn:hover,
-.footer-part__subscribe-btn:focus {
+.footer-part__subscribe-btn:hover, .footer-part__subscribe-btn:focus {
   background-color: var(--modal-open-btn-hover);
 }
 
@@ -550,7 +529,7 @@ address {
   margin-left: 10px;
 }
 
-.filter-btn {
+.portfolio__filter-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -564,9 +543,7 @@ address {
   padding: 6px 22px;
   transition: color var(--transition), background-color var(--transition), box-shadow var(--transition);
 }
-
-.filter-btn:hover,
-.filter-btn:focus {
+.portfolio__filter-btn:hover, .portfolio__filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--some-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -579,7 +556,7 @@ address {
   margin-bottom: 50px;
 }
 
-.project {
+.portfolio__project {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -587,7 +564,7 @@ address {
   margin-bottom: 4px;
 }
 
-.project-type {
+.portfolio__project-type {
   font-weight: 400;
   line-height: 1.7;
   color: var(--main-text-color);
@@ -600,35 +577,33 @@ address {
   flex-wrap: wrap;
 }
 
-.card {
+.portfolio__card {
   margin-right: 30px;
   margin-bottom: 30px;
   flex-basis: calc(33.3333333333% - 30px);
 }
 
-.card-content {
+.portfolio__card-content {
   padding: 20px 24px;
   border-right: 1px solid var(--card-border);
   border-bottom: 1px solid var(--card-border);
   border-left: 1px solid var(--card-border);
 }
 
-.card-link {
+.portfolio__card-link {
   transition: box-shadow var(--transition);
 }
-
-.card-link:hover,
-.card-link:focus {
+.portfolio__card-link:hover, .portfolio__card-link:focus {
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.overlay-construction {
+.portfolio__overlay-construction {
   position: relative;
   overflow: hidden;
 }
 
-.overlay {
+.portfolio__overlay {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
@@ -644,9 +619,7 @@ address {
   transform: translateY(100%);
   transition: transform var(--transition);
 }
-
-.card-link:hover .overlay,
-.card-link:focus .overlay {
+.portfolio__card-link:hover .portfolio__overlay, .portfolio__card-link:focus .portfolio__overlay {
   transform: translateY(0%);
 }
 
@@ -668,10 +641,6 @@ address {
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
 .modal {
   position: absolute;
   width: 528px;
@@ -682,6 +651,9 @@ address {
   background-color: var(--some-bkg-color);
   transition: transform var(--transition);
   padding: 40px;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .modal__close-btn {
@@ -700,9 +672,7 @@ address {
   cursor: pointer;
   transition: fill var(--transition);
 }
-
-.modal__close-btn:hover,
-.modal__close-btn:focus {
+.modal__close-btn:hover, .modal__close-btn:focus {
   fill: var(--accent-color);
 }
 
@@ -728,11 +698,6 @@ address {
   transition: border-color var(--transition);
   transition: fill var(--transition);
 }
-
-.modal__form-input:focus + .modal__form-input-icon {
-  fill: var(--subscribe-btn);
-}
-
 .modal__form-input:focus {
   outline: none;
   border-color: var(--subscribe-btn);
@@ -767,6 +732,9 @@ address {
   height: 18px;
   transition: fill var(--transition);
 }
+.modal__form-input:focus + .modal__form-input-icon {
+  fill: var(--subscribe-btn);
+}
 
 .modal__form-message {
   width: 100%;
@@ -778,22 +746,20 @@ address {
   resize: none;
   transition: border-color var(--transition);
 }
-
-.modal__form-field-message {
-  margin-bottom: 20px;
-}
-
 .modal__form-message:focus {
   outline: none;
   border-color: var(--subscribe-btn);
 }
-
 .modal__form-message::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--modal-message);
+}
+
+.modal__form-field-message {
+  margin-bottom: 20px;
 }
 
 .modal__form-check-field {
@@ -819,16 +785,14 @@ address {
   margin-right: 7px;
   cursor: pointer;
 }
-
-.modal__form-checkbox-icon-use {
-  display: none;
-}
-
 .modal__form-check:checked + .modal__form-checkbox-icon {
   border: none;
 }
 
-.modal__orm-check:checked + .modal__form-checkbox-icon .modal__form-checkbox-icon-use {
+.modal__form-checkbox-icon-use {
+  display: none;
+}
+.modal__form-check:checked + .modal__form-checkbox-icon .modal__form-checkbox-icon-use {
   display: block;
   border: none;
 }
@@ -855,8 +819,6 @@ address {
   cursor: pointer;
   transition: background-color var(--transition);
 }
-
-.modal__submit-btn:hover,
-.modal__submit-btn:focus {
+.modal__submit-btn:hover, .modal__submit-btn:focus {
   background-color: var(--modal-open-btn-hover);
 }/*# sourceMappingURL=main.css.map */
