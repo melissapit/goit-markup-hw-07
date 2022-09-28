@@ -199,6 +199,9 @@ img {
   background-color: var(--accent-color);
   border-radius: 2px;
 }
+.site-nav__link.site-nav__link_current {
+  color: var(--accent-color);
+}
 
 .site-nav__link,
 .contacts,
